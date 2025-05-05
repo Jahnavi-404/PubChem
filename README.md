@@ -2,6 +2,8 @@
 
 This project analyzes molecular property data (Molecular Weight, LogP, InChIKey, and SMILES) for selected drug-like compounds using data from PubChem. The objective is to demonstrate real-world data handling, cleaning, and visualization using Python libraries like Pandas, Seaborn, and Matplotlib.
 
+---
+
 ## 📊 Dataset Source
 
 The dataset is fetched directly from PubChem using the PUG REST API:
@@ -37,9 +39,23 @@ The dataset is fetched directly from PubChem using the PUG REST API:
 
 ---
 
-## 💡 Bonus Insight: Solvent Selection in Drug Development
+## 🧪 Bonus: How Trends in Molecular Properties Support Solvent Selection
 
-Understanding **LogP and molecular weight** trends supports selecting appropriate solvents for drug formulation. Hydrophobic compounds (high LogP) are better suited to non-polar solvents, while hydrophilic compounds (low LogP) dissolve better in polar solvents—key for bioavailability and delivery systems.
+Understanding molecular properties such as **Molecular Weight** and **LogP** is crucial in selecting suitable solvents during drug development:
+
+- **LogP (Partition Coefficient):**  
+  LogP indicates the lipophilicity (fat-solubility) of a compound.  
+  - Compounds with **high LogP** are more lipophilic and tend to dissolve better in **non-polar solvents** (e.g., hexane, chloroform).  
+  - Compounds with **low LogP** are more hydrophilic and dissolve better in **polar solvents** (e.g., water, ethanol).
+
+- **Molecular Weight:**  
+  - Compounds with **higher molecular weights** often require solvents with stronger solvating power to ensure complete dissolution.  
+  - Very large molecules may also present solubility issues and may require **co-solvent systems** or **special solubilizers**.
+
+📌 **Summary:**  
+By analyzing these molecular properties:
+- Formulation scientists can select suitable solvents.
+- It aids in optimizing **drug solubility**, **bioavailability**, and **delivery effectiveness**.
 
 ---
 
